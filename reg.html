@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Plus Shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<header>
+    <img src="img/logo.png" alt="logo" width="128" onclick="window.location.href='index.html'">
+    <input type="checkbox" id="hamburger"/>
+    <label for="hamburger">☰</label>
+    <nav>
+        <a href='index.html'>Главная</a>
+        <a href='phones.html'>Смартфоны</a>
+        <a href='about.html'>О нас</a>
+        <a href='#' id="profile">Loading...</a>
+        <a href='index.html' id="button-logout">Выйти</a>
+        <p id="user-header"></p>
+    </nav>
+</header>
+<main>
+    <section class="reg">
+        <form id="reg-form">
+            <h1>Регистрация на сайте</h1>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Введите email" required>
+            <label for="name">Имя</label>
+            <input type="text" id="name" placeholder="Введите имя" required>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" placeholder="Введите пароль" required>
+            <label for="password2">Повторите пароль</label>
+            <input type="password" id="password2" placeholder="Повторите пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+            <p>Уже есть аккаунт? <a href="auth.html">Войти</a></p>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>One Plus Shop (c) 2022</p>
+</footer>
+<script src="js/loadingProfile.js"></script>
+<script src="js/reg.js"></script>
+</body>
+</html>

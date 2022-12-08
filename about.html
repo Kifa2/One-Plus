@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Plus Shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <img src="img/logo.png" alt="logo" width="128" onclick="window.location.href='index.html'">
+    <input type="checkbox" id="hamburger"/>
+    <label for="hamburger">☰</label>
+    <nav>
+        <a href='index.html'>Главная</a>
+        <a href='phones.html'>Смартфоны</a>
+        <a href='about.html'>О нас</a>
+        <a href='#' id="profile">Loading...</a>
+        <a href='index.html' id="button-logout">Выйти</a>
+        <p id="user-header"></p>
+    </nav>
+</header>
+<main>
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Наш адрес: г. Москва, ул. Ленина, д. 1</p>
+        <p>Наш телефон: +7 (495) 123-45-67</p>
+        <p>Наш email: support@oneplus.com</p>
+    </section>
+    <section id="information">
+        <h2>Информация</h2>
+        <p class="bold">О нас</p>
+        <p>Мы компании One Plus разрабатываем современные смартфоны, а затем продаем их в России. Мы работаем с 2019 года.</p>
+        <p>Доставка:</p>
+        <p>Доставка осуществляется курьерской службой. Стоимость доставки зависит от веса заказа и расстояния до адреса доставки.</p>
+        <p>Оплата:</p>
+        <p>Оплата производится онлайн по карте или наличными курьеру при получении заказа.</p>
+    </section>
+</main>
+<footer>
+    <p>One Plus Shop (c) 2022</p>
+</footer>
+<script src="js/loadingProfile.js"></script>
+</body>
+</html>

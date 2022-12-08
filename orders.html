@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Plus Shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orders.css">
+</head>
+<body>
+<header>
+    <img src="img/logo.png" alt="logo" width="128" onclick="window.location.href='index.html'">
+    <input type="checkbox" id="hamburger"/>
+    <label for="hamburger">☰</label>
+    <nav>
+        <a href='index.html'>Главная</a>
+        <a href='phones.html'>Смартфоны</a>
+        <a href='about.html'>О нас</a>
+        <a href='#' id="profile">Loading...</a>
+        <a href='index.html' id="button-logout">Выйти</a>
+        <p id="user-header"></p>
+    </nav>
+</header>
+<main>
+    <h1>История заказов</h1>
+    <section id="orders"></section>
+</main>
+<footer>
+    <p>One Plus Shop (c) 2022</p>
+</footer>
+<script src="js/loadingProfile.js"></script>
+<script src="js/database.js"></script>
+<script src="js/orders.js"></script>
+</body>
+</html>
